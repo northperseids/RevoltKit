@@ -462,7 +462,7 @@ async def on_ready(_) -> None:
                 help_messages.append("")
 
     print('Logged on as', bot.me)
-    await bot.me.edit(status=pyvolt.UserStatusEdit(text="Use " + prefix + "setup to get started!", presence=pyvolt.Presence.online))
+    await bot.me.edit(status=pyvolt.UserStatusEdit(text="(see bio) Prefix: " + prefix, presence=pyvolt.Presence.online))
 
 
 @bot.on(MessageCreateEvent)

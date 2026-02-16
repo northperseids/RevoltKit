@@ -16,6 +16,9 @@ import emoji
 from pyvolt.ext.commands import MissingPermissions
 from setuptools.command.alias import alias
 
+from dotenv import load_dotenv
+load_dotenv()
+
 path = 'users.txt'
 users = list()
 prefix = os.getenv("PREFIX", "rk;")
